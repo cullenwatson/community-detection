@@ -6,7 +6,29 @@
 
 #IncludeRegexTransform: 
 
-/Users/pc/Documents/GitHub/22s-pa03-girvan-newman-cullenwatson/src/main.cpp
+/mnt/c/Users/pc/Documents/GitHub/22s-pa03-girvan-newman-cullenwatson/src/MyGraph.cpp
+MyGraph.h
+/mnt/c/Users/pc/Documents/GitHub/22s-pa03-girvan-newman-cullenwatson/src/MyGraph.h
+
+/mnt/c/Users/pc/Documents/GitHub/22s-pa03-girvan-newman-cullenwatson/src/MyGraph.h
 iostream
 -
+fstream
+-
+utility
+-
+algorithm
+-
+vector
+-
+boost/graph/graph_traits.hpp
+/mnt/c/Users/pc/Documents/GitHub/22s-pa03-girvan-newman-cullenwatson/src/boost/graph/graph_traits.hpp
+boost/graph/adjacency_list.hpp
+/mnt/c/Users/pc/Documents/GitHub/22s-pa03-girvan-newman-cullenwatson/src/boost/graph/adjacency_list.hpp
+boost/graph/graphml.hpp
+/mnt/c/Users/pc/Documents/GitHub/22s-pa03-girvan-newman-cullenwatson/src/boost/graph/graphml.hpp
+
+/mnt/c/Users/pc/Documents/GitHub/22s-pa03-girvan-newman-cullenwatson/src/main.cpp
+MyGraph.h
+/mnt/c/Users/pc/Documents/GitHub/22s-pa03-girvan-newman-cullenwatson/src/MyGraph.h
 
