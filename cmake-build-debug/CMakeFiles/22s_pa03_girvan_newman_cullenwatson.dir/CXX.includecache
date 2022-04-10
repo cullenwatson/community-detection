@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/mnt/c/Users/pc/Documents/GitHub/22s-pa03-girvan-newman-cullenwatson/src/Algo.cpp
-Algo.h
-/mnt/c/Users/pc/Documents/GitHub/22s-pa03-girvan-newman-cullenwatson/src/Algo.h
-
 /mnt/c/Users/pc/Documents/GitHub/22s-pa03-girvan-newman-cullenwatson/src/Algo.h
 boost/bimap.hpp
 -
@@ -23,6 +19,8 @@ fstream
 -
 iostream
 -
+InputGraph.h
+/mnt/c/Users/pc/Documents/GitHub/22s-pa03-girvan-newman-cullenwatson/src/InputGraph.h
 
 /mnt/c/Users/pc/Documents/GitHub/22s-pa03-girvan-newman-cullenwatson/src/InputGraph.h
 iostream

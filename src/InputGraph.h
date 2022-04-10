@@ -33,6 +33,9 @@ public:
 
     void outputEdges();
     void saveEdges();
+    void removeEdge(int, int);
+
+    void saveToFile();
 };
 
 

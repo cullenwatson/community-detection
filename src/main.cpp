@@ -8,19 +8,38 @@ int main(int argc, char *argv[]) {
 
     // create graph
     InputGraph inputGraph("../data/people.graphml");
-    inputGraph.outputEdges();
-    inputGraph.saveEdges();
 
-    // find betweenness
     Algo algo;
-    algo.readGraph("../data/coords.txt");
+
+    // ------REMOVE TOP N  EDGES
+
+    float centrality = 400;
+    // 2.34
+    while (centrality > 3){
+        // 1. Save current graph
+        inputGraph.saveEdges();
+
+        // 2. Read saved graph
+        algo.readGraph("../data/coords.txt");
+        // 3. Find top centrality and remove
+        algo.getTopEdge();
+        int x = algo.getTopCentX();
+        int y = algo.getTopCentY();
+        centrality = algo.getCentrality();
+        inputGraph.removeEdge(x, y);
+
+        cout<<"-------------------------\n";
+    }
 
 
-    cout<<"-----------------------\n";
-    algo.outputEdges();
 
-    algo.removeEdge();
-   // algo.outputEdges();
+
+   // cout<<"-----------------------\n";
+
+    // Output results
+    inputGraph.saveToFile();
+    inputGraph.outputEdges();
+
 
 
 

@@ -58,13 +58,13 @@ void Algo::calcBetweenness(){
 
 }
 
-void Algo::removeEdge() {
+void Algo::getTopEdge() {
     calcBetweenness();
 
     auto& edgenames = mappings.right;
 
     // output top centrality
-    /*
+
     ECEntry const& entry = ranking[0];
     auto [edge, centrality] = entry;
     auto s = edgenames.at(source(edge, g));
@@ -72,20 +72,21 @@ void Algo::removeEdge() {
     std::cout << s << "-" << t << " centrality " << centrality << "\n";
     topCentX = stoi(s);
     topCentY = stoi(t);
+    centrality_ = centrality;
 
     //cout<<topCentX<<" "<<topCentY;
-    remove_edge(topCentX, topCentY, g);
-     */
+
+
 
 
 
     // output all centralities
-    for (ECEntry const& entry : ranking) {
-        auto [edge, centrality] = entry;
-        auto s = edgenames.at(source(edge, g));
-        auto t = edgenames.at(target(edge, g));
-        std::cout << s << "-" << t << " centrality " << centrality << "\n";
-    }
+//    for (ECEntry const& entry : ranking) {
+//        auto [edge, centrality] = entry;
+//        auto s = edgenames.at(source(edge, g));
+//        auto t = edgenames.at(target(edge, g));
+//        std::cout << s << "-" << t << " centrality " << centrality << "\n";
+//    }
 }
 
 void Algo::outputEdges() {
@@ -96,3 +97,4 @@ void Algo::outputEdges() {
     for (edge_iterator edge_iter = ei.first; edge_iter != ei.second; ++edge_iter)
         cout << source(*edge_iter, g) << " - " << target(*edge_iter, g) << "\n";
 }
+

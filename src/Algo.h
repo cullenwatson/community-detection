@@ -11,13 +11,16 @@
 #include "boost/graph/graphml.hpp"
 #include <fstream>
 #include <iostream>
+#include "InputGraph.h"
 using namespace boost;
 using namespace std;
 typedef bimap<string, int> Mappings;
 
-typedef adjacency_list<vecS, vecS, bidirectionalS,
+typedef adjacency_list<setS, vecS, bidirectionalS,
         no_property,
         property<edge_weight_t, float>> Graph_type;
+
+typedef adjacency_list<vecS, vecS, undirectedS> Graph;
 
 typedef std::map<Graph_type::edge_descriptor, double> ECMap;
 typedef ECMap::value_type ECEntry;
@@ -33,17 +36,23 @@ private:
 
     // x, y of current top centrality
     int topCentX, topCentY;
+    float centrality_;
     void calcBetweenness();
 public:
 
     Algo();
 
+
     void readGraph(std::string const& fname);
 
 
     // outputs
-    void removeEdge();
+    void getTopEdge();
     void outputEdges();
+
+    int getTopCentX(){ return topCentX; };
+    int getTopCentY(){ return topCentY; };
+    int getCentrality(){ return centrality_; };
 
 };
 
