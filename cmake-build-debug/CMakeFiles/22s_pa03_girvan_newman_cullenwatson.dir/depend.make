@@ -4,10 +4,10 @@
 CMakeFiles/22s_pa03_girvan_newman_cullenwatson.dir/src/Algo.cpp.o: ../src/Algo.cpp
 CMakeFiles/22s_pa03_girvan_newman_cullenwatson.dir/src/Algo.cpp.o: ../src/Algo.h
 
-CMakeFiles/22s_pa03_girvan_newman_cullenwatson.dir/src/MyGraph.cpp.o: ../src/MyGraph.cpp
-CMakeFiles/22s_pa03_girvan_newman_cullenwatson.dir/src/MyGraph.cpp.o: ../src/MyGraph.h
+CMakeFiles/22s_pa03_girvan_newman_cullenwatson.dir/src/InputGraph.cpp.o: ../src/InputGraph.cpp
+CMakeFiles/22s_pa03_girvan_newman_cullenwatson.dir/src/InputGraph.cpp.o: ../src/InputGraph.h
 
 CMakeFiles/22s_pa03_girvan_newman_cullenwatson.dir/src/main.cpp.o: ../src/Algo.h
-CMakeFiles/22s_pa03_girvan_newman_cullenwatson.dir/src/main.cpp.o: ../src/MyGraph.h
+CMakeFiles/22s_pa03_girvan_newman_cullenwatson.dir/src/main.cpp.o: ../src/InputGraph.h
 CMakeFiles/22s_pa03_girvan_newman_cullenwatson.dir/src/main.cpp.o: ../src/main.cpp
 

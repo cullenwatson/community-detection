@@ -70,18 +70,18 @@ CMakeFiles/22s_pa03_girvan_newman_cullenwatson.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/22s_pa03_girvan_newman_cullenwatson.dir/src/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/pc/Documents/GitHub/22s-pa03-girvan-newman-cullenwatson/src/main.cpp -o CMakeFiles/22s_pa03_girvan_newman_cullenwatson.dir/src/main.cpp.s
 
-CMakeFiles/22s_pa03_girvan_newman_cullenwatson.dir/src/MyGraph.cpp.o: CMakeFiles/22s_pa03_girvan_newman_cullenwatson.dir/flags.make
-CMakeFiles/22s_pa03_girvan_newman_cullenwatson.dir/src/MyGraph.cpp.o: ../src/MyGraph.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/pc/Documents/GitHub/22s-pa03-girvan-newman-cullenwatson/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/22s_pa03_girvan_newman_cullenwatson.dir/src/MyGraph.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/22s_pa03_girvan_newman_cullenwatson.dir/src/MyGraph.cpp.o -c /mnt/c/Users/pc/Documents/GitHub/22s-pa03-girvan-newman-cullenwatson/src/MyGraph.cpp
+CMakeFiles/22s_pa03_girvan_newman_cullenwatson.dir/src/InputGraph.cpp.o: CMakeFiles/22s_pa03_girvan_newman_cullenwatson.dir/flags.make
+CMakeFiles/22s_pa03_girvan_newman_cullenwatson.dir/src/InputGraph.cpp.o: ../src/InputGraph.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/pc/Documents/GitHub/22s-pa03-girvan-newman-cullenwatson/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/22s_pa03_girvan_newman_cullenwatson.dir/src/InputGraph.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/22s_pa03_girvan_newman_cullenwatson.dir/src/InputGraph.cpp.o -c /mnt/c/Users/pc/Documents/GitHub/22s-pa03-girvan-newman-cullenwatson/src/InputGraph.cpp
 
-CMakeFiles/22s_pa03_girvan_newman_cullenwatson.dir/src/MyGraph.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/22s_pa03_girvan_newman_cullenwatson.dir/src/MyGraph.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/pc/Documents/GitHub/22s-pa03-girvan-newman-cullenwatson/src/MyGraph.cpp > CMakeFiles/22s_pa03_girvan_newman_cullenwatson.dir/src/MyGraph.cpp.i
+CMakeFiles/22s_pa03_girvan_newman_cullenwatson.dir/src/InputGraph.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/22s_pa03_girvan_newman_cullenwatson.dir/src/InputGraph.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/pc/Documents/GitHub/22s-pa03-girvan-newman-cullenwatson/src/InputGraph.cpp > CMakeFiles/22s_pa03_girvan_newman_cullenwatson.dir/src/InputGraph.cpp.i
 
-CMakeFiles/22s_pa03_girvan_newman_cullenwatson.dir/src/MyGraph.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/22s_pa03_girvan_newman_cullenwatson.dir/src/MyGraph.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/pc/Documents/GitHub/22s-pa03-girvan-newman-cullenwatson/src/MyGraph.cpp -o CMakeFiles/22s_pa03_girvan_newman_cullenwatson.dir/src/MyGraph.cpp.s
+CMakeFiles/22s_pa03_girvan_newman_cullenwatson.dir/src/InputGraph.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/22s_pa03_girvan_newman_cullenwatson.dir/src/InputGraph.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/pc/Documents/GitHub/22s-pa03-girvan-newman-cullenwatson/src/InputGraph.cpp -o CMakeFiles/22s_pa03_girvan_newman_cullenwatson.dir/src/InputGraph.cpp.s
 
 CMakeFiles/22s_pa03_girvan_newman_cullenwatson.dir/src/Algo.cpp.o: CMakeFiles/22s_pa03_girvan_newman_cullenwatson.dir/flags.make
 CMakeFiles/22s_pa03_girvan_newman_cullenwatson.dir/src/Algo.cpp.o: ../src/Algo.cpp
@@ -99,14 +99,14 @@ CMakeFiles/22s_pa03_girvan_newman_cullenwatson.dir/src/Algo.cpp.s: cmake_force
 # Object files for target 22s_pa03_girvan_newman_cullenwatson
 22s_pa03_girvan_newman_cullenwatson_OBJECTS = \
 "CMakeFiles/22s_pa03_girvan_newman_cullenwatson.dir/src/main.cpp.o" \
-"CMakeFiles/22s_pa03_girvan_newman_cullenwatson.dir/src/MyGraph.cpp.o" \
+"CMakeFiles/22s_pa03_girvan_newman_cullenwatson.dir/src/InputGraph.cpp.o" \
 "CMakeFiles/22s_pa03_girvan_newman_cullenwatson.dir/src/Algo.cpp.o"
 
 # External object files for target 22s_pa03_girvan_newman_cullenwatson
 22s_pa03_girvan_newman_cullenwatson_EXTERNAL_OBJECTS =
 
 22s_pa03_girvan_newman_cullenwatson: CMakeFiles/22s_pa03_girvan_newman_cullenwatson.dir/src/main.cpp.o
-22s_pa03_girvan_newman_cullenwatson: CMakeFiles/22s_pa03_girvan_newman_cullenwatson.dir/src/MyGraph.cpp.o
+22s_pa03_girvan_newman_cullenwatson: CMakeFiles/22s_pa03_girvan_newman_cullenwatson.dir/src/InputGraph.cpp.o
 22s_pa03_girvan_newman_cullenwatson: CMakeFiles/22s_pa03_girvan_newman_cullenwatson.dir/src/Algo.cpp.o
 22s_pa03_girvan_newman_cullenwatson: CMakeFiles/22s_pa03_girvan_newman_cullenwatson.dir/build.make
 22s_pa03_girvan_newman_cullenwatson: /usr/lib/x86_64-linux-gnu/libboost_graph.so.1.71.0

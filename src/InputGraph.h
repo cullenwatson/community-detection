@@ -1,5 +1,5 @@
-#ifndef INC_22S_PA03_GIRVAN_NEWMAN_CULLENWATSON_MYGRAPH_H
-#define INC_22S_PA03_GIRVAN_NEWMAN_CULLENWATSON_MYGRAPH_H
+#ifndef INC_22S_PA03_GIRVAN_NEWMAN_CULLENWATSON_INPUTGRAPH_H
+#define INC_22S_PA03_GIRVAN_NEWMAN_CULLENWATSON_INPUTGRAPH_H
 
 #include <iostream>
 #include <fstream>
@@ -24,16 +24,16 @@ using namespace std;
 typedef adjacency_list<vecS, vecS, undirectedS> Graph;
 typedef graph_traits<Graph>::edge_iterator edge_iterator;
 
-class MyGraph {
+class InputGraph {
 private:
     Graph g;
 public:
     // reads in graphml file
-    MyGraph(string);
+    InputGraph(string);
 
     void outputEdges();
     void saveEdges();
 };
 
 
-#endif //INC_22S_PA03_GIRVAN_NEWMAN_CULLENWATSON_MYGRAPH_H
+#endif //INC_22S_PA03_GIRVAN_NEWMAN_CULLENWATSON_INPUTGRAPH_H

@@ -5,7 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/mnt/c/Users/pc/Documents/GitHub/22s-pa03-girvan-newman-cullenwatson/src/Algo.cpp" "/mnt/c/Users/pc/Documents/GitHub/22s-pa03-girvan-newman-cullenwatson/cmake-build-debug/CMakeFiles/22s_pa03_girvan_newman_cullenwatson.dir/src/Algo.cpp.o"
-  "/mnt/c/Users/pc/Documents/GitHub/22s-pa03-girvan-newman-cullenwatson/src/MyGraph.cpp" "/mnt/c/Users/pc/Documents/GitHub/22s-pa03-girvan-newman-cullenwatson/cmake-build-debug/CMakeFiles/22s_pa03_girvan_newman_cullenwatson.dir/src/MyGraph.cpp.o"
+  "/mnt/c/Users/pc/Documents/GitHub/22s-pa03-girvan-newman-cullenwatson/src/InputGraph.cpp" "/mnt/c/Users/pc/Documents/GitHub/22s-pa03-girvan-newman-cullenwatson/cmake-build-debug/CMakeFiles/22s_pa03_girvan_newman_cullenwatson.dir/src/InputGraph.cpp.o"
   "/mnt/c/Users/pc/Documents/GitHub/22s-pa03-girvan-newman-cullenwatson/src/main.cpp" "/mnt/c/Users/pc/Documents/GitHub/22s-pa03-girvan-newman-cullenwatson/cmake-build-debug/CMakeFiles/22s_pa03_girvan_newman_cullenwatson.dir/src/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

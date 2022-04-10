@@ -6,7 +6,7 @@
 Algo::Algo(){
 
 }
-Graph_type Algo::readGraph(std::string const& fname, Mappings& mappings){
+void Algo::readGraph(std::string const& fname){
     std::ifstream myFile(fname);
 
     // gets first line and turns it to int
@@ -32,12 +32,10 @@ Graph_type Algo::readGraph(std::string const& fname, Mappings& mappings){
                                           1.f); // no edge weights
 
     int const numVertices = mappings.size();
-    return Graph_type(edge_array.data(), edge_array.data() + edge_array.size(),
+    g = Graph_type(edge_array.data(), edge_array.data() + edge_array.size(),
                  transmission_delay.data(), numVertices);
 }
 void Algo::calcBetweenness(){
-
-    g = readGraph("../data/people.txt", mappings);
 
     ECMap ecm;
     brandes_betweenness_centrality(
@@ -48,7 +46,7 @@ void Algo::calcBetweenness(){
     ranking.insert(it, ecm.begin(), ecm.end());
     {
         // top-n
-        auto n = std::min(30ul, ranking.size());
+        auto n = std::min(10ul, ranking.size());
 
         auto first = ranking.begin(), middle = first + n, last = ranking.end();
         std::partial_sort(
@@ -60,16 +58,41 @@ void Algo::calcBetweenness(){
 
 }
 
-void Algo::outputRanking() {
+void Algo::removeEdge() {
+    calcBetweenness();
+
     auto& edgenames = mappings.right;
 
+    // output top centrality
+    /*
+    ECEntry const& entry = ranking[0];
+    auto [edge, centrality] = entry;
+    auto s = edgenames.at(source(edge, g));
+    auto t = edgenames.at(target(edge, g));
+    std::cout << s << "-" << t << " centrality " << centrality << "\n";
+    topCentX = stoi(s);
+    topCentY = stoi(t);
 
+    //cout<<topCentX<<" "<<topCentY;
+    remove_edge(topCentX, topCentY, g);
+     */
+
+
+
+    // output all centralities
     for (ECEntry const& entry : ranking) {
-        //cout<<entry.first<<endl;
-        //cout<<entry.second<<endl;
         auto [edge, centrality] = entry;
         auto s = edgenames.at(source(edge, g));
         auto t = edgenames.at(target(edge, g));
         std::cout << s << "-" << t << " centrality " << centrality << "\n";
     }
+}
+
+void Algo::outputEdges() {
+    typedef graph_traits<Graph_type>::edge_iterator edge_iterator;
+
+    cout <<"-----------"<< num_edges(g) <<"-----------"<< endl;
+    pair<edge_iterator, edge_iterator> ei = edges(g);
+    for (edge_iterator edge_iter = ei.first; edge_iter != ei.second; ++edge_iter)
+        cout << source(*edge_iter, g) << " - " << target(*edge_iter, g) << "\n";
 }

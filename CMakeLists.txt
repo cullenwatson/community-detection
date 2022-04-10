@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 3.14)
 # Project Name
 project(22s_pa03_girvan_newman_cullenwatson)
 # Executable
-add_executable(22s_pa03_girvan_newman_cullenwatson src/main.cpp src/MyGraph.cpp src/MyGraph.h src/Algo.h src/Algo.cpp)
+add_executable(22s_pa03_girvan_newman_cullenwatson src/main.cpp src/InputGraph.cpp src/InputGraph.h src/Algo.h src/Algo.cpp)
 # Configure Files
 file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/data DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
 # Boost Basic Settings

@@ -150,32 +150,32 @@ src/Algo.cpp.s:
 	$(MAKE) -f CMakeFiles/22s_pa03_girvan_newman_cullenwatson.dir/build.make CMakeFiles/22s_pa03_girvan_newman_cullenwatson.dir/src/Algo.cpp.s
 .PHONY : src/Algo.cpp.s
 
-src/MyGraph.o: src/MyGraph.cpp.o
+src/InputGraph.o: src/InputGraph.cpp.o
 
-.PHONY : src/MyGraph.o
+.PHONY : src/InputGraph.o
 
 # target to build an object file
-src/MyGraph.cpp.o:
-	$(MAKE) -f CMakeFiles/22s_pa03_girvan_newman_cullenwatson.dir/build.make CMakeFiles/22s_pa03_girvan_newman_cullenwatson.dir/src/MyGraph.cpp.o
-.PHONY : src/MyGraph.cpp.o
+src/InputGraph.cpp.o:
+	$(MAKE) -f CMakeFiles/22s_pa03_girvan_newman_cullenwatson.dir/build.make CMakeFiles/22s_pa03_girvan_newman_cullenwatson.dir/src/InputGraph.cpp.o
+.PHONY : src/InputGraph.cpp.o
 
-src/MyGraph.i: src/MyGraph.cpp.i
+src/InputGraph.i: src/InputGraph.cpp.i
 
-.PHONY : src/MyGraph.i
+.PHONY : src/InputGraph.i
 
 # target to preprocess a source file
-src/MyGraph.cpp.i:
-	$(MAKE) -f CMakeFiles/22s_pa03_girvan_newman_cullenwatson.dir/build.make CMakeFiles/22s_pa03_girvan_newman_cullenwatson.dir/src/MyGraph.cpp.i
-.PHONY : src/MyGraph.cpp.i
+src/InputGraph.cpp.i:
+	$(MAKE) -f CMakeFiles/22s_pa03_girvan_newman_cullenwatson.dir/build.make CMakeFiles/22s_pa03_girvan_newman_cullenwatson.dir/src/InputGraph.cpp.i
+.PHONY : src/InputGraph.cpp.i
 
-src/MyGraph.s: src/MyGraph.cpp.s
+src/InputGraph.s: src/InputGraph.cpp.s
 
-.PHONY : src/MyGraph.s
+.PHONY : src/InputGraph.s
 
 # target to generate assembly for a file
-src/MyGraph.cpp.s:
-	$(MAKE) -f CMakeFiles/22s_pa03_girvan_newman_cullenwatson.dir/build.make CMakeFiles/22s_pa03_girvan_newman_cullenwatson.dir/src/MyGraph.cpp.s
-.PHONY : src/MyGraph.cpp.s
+src/InputGraph.cpp.s:
+	$(MAKE) -f CMakeFiles/22s_pa03_girvan_newman_cullenwatson.dir/build.make CMakeFiles/22s_pa03_girvan_newman_cullenwatson.dir/src/InputGraph.cpp.s
+.PHONY : src/InputGraph.cpp.s
 
 src/main.o: src/main.cpp.o
 
@@ -216,9 +216,9 @@ help:
 	@echo "... src/Algo.o"
 	@echo "... src/Algo.i"
 	@echo "... src/Algo.s"
-	@echo "... src/MyGraph.o"
-	@echo "... src/MyGraph.i"
-	@echo "... src/MyGraph.s"
+	@echo "... src/InputGraph.o"
+	@echo "... src/InputGraph.i"
+	@echo "... src/InputGraph.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

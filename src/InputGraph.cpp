@@ -1,9 +1,9 @@
-#include "MyGraph.h"
+#include "InputGraph.h"
 #include <iostream>
 
 using namespace std;
 
-MyGraph::MyGraph(string file) {
+InputGraph::InputGraph(string file) {
 
     // read file
     ifstream inFile(file);
@@ -16,7 +16,7 @@ MyGraph::MyGraph(string file) {
     inFile.close();
 }
 
-void MyGraph::outputEdges() {
+void InputGraph::outputEdges() {
 
     cout << num_edges(g) << endl;
     pair<edge_iterator, edge_iterator> ei = edges(g);
@@ -25,8 +25,8 @@ void MyGraph::outputEdges() {
 
 }
 
-void MyGraph::saveEdges() {
-    ofstream file("../data/people.txt");
+void InputGraph::saveEdges() {
+    ofstream file("../data/coords.txt");
     file << num_edges(g) << endl;
     pair<edge_iterator, edge_iterator> ei = edges(g);
     for (edge_iterator edge_iter = ei.first; edge_iter != ei.second; ++edge_iter)

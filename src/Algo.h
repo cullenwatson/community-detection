@@ -15,7 +15,7 @@ using namespace boost;
 using namespace std;
 typedef bimap<string, int> Mappings;
 
-typedef adjacency_list<setS, vecS, bidirectionalS,
+typedef adjacency_list<vecS, vecS, bidirectionalS,
         no_property,
         property<edge_weight_t, float>> Graph_type;
 
@@ -30,13 +30,21 @@ private:
     Mappings mappings;
     Graph_type g;
     std::vector<std::reference_wrapper<ECEntry>> ranking;
+
+    // x, y of current top centrality
+    int topCentX, topCentY;
+    void calcBetweenness();
 public:
 
     Algo();
 
-    Graph_type readGraph(std::string const& fname, Mappings& mappings);
-    void calcBetweenness();
-    void outputRanking();
+    void readGraph(std::string const& fname);
+
+
+    // outputs
+    void removeEdge();
+    void outputEdges();
+
 };
 
 

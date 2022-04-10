@@ -98,10 +98,10 @@
 		<Unit filename="/mnt/c/Users/pc/Documents/GitHub/22s-pa03-girvan-newman-cullenwatson/src/Algo.h">
 			<Option target="22s_pa03_girvan_newman_cullenwatson"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/pc/Documents/GitHub/22s-pa03-girvan-newman-cullenwatson/src/MyGraph.cpp">
+		<Unit filename="/mnt/c/Users/pc/Documents/GitHub/22s-pa03-girvan-newman-cullenwatson/src/InputGraph.cpp">
 			<Option target="22s_pa03_girvan_newman_cullenwatson"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/pc/Documents/GitHub/22s-pa03-girvan-newman-cullenwatson/src/MyGraph.h">
+		<Unit filename="/mnt/c/Users/pc/Documents/GitHub/22s-pa03-girvan-newman-cullenwatson/src/InputGraph.h">
 			<Option target="22s_pa03_girvan_newman_cullenwatson"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/pc/Documents/GitHub/22s-pa03-girvan-newman-cullenwatson/src/main.cpp">
