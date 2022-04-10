@@ -16,3 +16,13 @@ void MyGraph::outputEdges(){
     for(edge_iterator edge_iter = ei.first; edge_iter != ei.second; ++edge_iter)
         cout << "(" << source(*edge_iter, g) << ", " << target(*edge_iter, g) << ")\n";
 }
+
+void MyGraph::computeBetweenness() {
+
+    shared_array_property_map<int, property_map<Graph, vertex_index_t>::const_type>
+            centrality_map(num_vertices(g), get(vertex_index, g));
+
+
+    brandes_betweenness_centrality(g, centrality_map);
+
+}
