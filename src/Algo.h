@@ -22,7 +22,7 @@ typedef adjacency_list<setS, vecS, bidirectionalS,
 
 typedef adjacency_list<vecS, vecS, undirectedS> Graph;
 
-typedef std::map<Graph_type::edge_descriptor, double> ECMap;
+typedef map<Graph_type::edge_descriptor, double> ECMap;
 typedef ECMap::value_type ECEntry;
 
 typedef typename graph_traits<Graph_type>::vertex_descriptor Vertex;
