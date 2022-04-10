@@ -13,12 +13,14 @@
 #include "boost/graph/graphml.hpp"
 #include "boost/graph/betweenness_centrality.hpp"
 
-#include <boost/test/minimal.hpp>
 #include <boost/random/uniform_01.hpp>
 #include <boost/random/linear_congruential.hpp>
 #include <boost/lexical_cast.hpp>
+#include <boost/bimap.hpp>
+
 using namespace boost;
 using namespace std;
+
 typedef adjacency_list<vecS, vecS, undirectedS> Graph;
 typedef graph_traits<Graph>::edge_iterator edge_iterator;
 
@@ -30,7 +32,6 @@ public:
     MyGraph(string);
 
     void outputEdges();
-    void computeBetweenness();
 };
 
 

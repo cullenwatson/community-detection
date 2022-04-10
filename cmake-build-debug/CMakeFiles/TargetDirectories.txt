@@ -1,3 +1,3 @@
-/mnt/c/Users/pc/Documents/GitHub/22s-pa03-girvan-newman-cullenwatson/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/mnt/c/Users/pc/Documents/GitHub/22s-pa03-girvan-newman-cullenwatson/cmake-build-debug/CMakeFiles/edit_cache.dir
-/mnt/c/Users/pc/Documents/GitHub/22s-pa03-girvan-newman-cullenwatson/cmake-build-debug/CMakeFiles/22s_pa03_girvan_newman_cullenwatson.dir
+/Users/pc/Documents/GitHub/22s-pa03-girvan-newman-cullenwatson/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/pc/Documents/GitHub/22s-pa03-girvan-newman-cullenwatson/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/pc/Documents/GitHub/22s-pa03-girvan-newman-cullenwatson/cmake-build-debug/CMakeFiles/22s_pa03_girvan_newman_cullenwatson.dir

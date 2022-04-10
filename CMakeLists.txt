@@ -3,13 +3,14 @@ cmake_minimum_required(VERSION 3.14)
 # Project Name
 project(22s_pa03_girvan_newman_cullenwatson)
 # Executable
-add_executable(22s_pa03_girvan_newman_cullenwatson src/main.cpp src/MyGraph.cpp src/MyGraph.h)
+add_executable(22s_pa03_girvan_newman_cullenwatson src/main.cpp src/MyGraph.cpp src/MyGraph.h src/Algo.h src/Algo.cpp)
 # Configure Files
 file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/data DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
 # Boost Basic Settings
 set(Boost_USE_STATIC_LIBS OFF)
 set(Boost_USE_MULTITHREADED ON)
 set(Boost_USE_STATIC_RUNTIME OFF)
+set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 # Finds Boost Packages (Minimum 1.71.0 Requirement, Will Output)
 find_package(Boost 1.71.0 REQUIRED COMPONENTS graph system filesystem)
 message(STATUS "Boost version: ${Boost_VERSION}")

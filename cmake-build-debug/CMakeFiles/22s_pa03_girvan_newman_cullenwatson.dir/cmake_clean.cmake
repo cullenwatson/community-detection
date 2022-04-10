@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "22s_pa03_girvan_newman_cullenwatson"
   "22s_pa03_girvan_newman_cullenwatson.pdb"
+  "CMakeFiles/22s_pa03_girvan_newman_cullenwatson.dir/src/Algo.cpp.o"
   "CMakeFiles/22s_pa03_girvan_newman_cullenwatson.dir/src/MyGraph.cpp.o"
   "CMakeFiles/22s_pa03_girvan_newman_cullenwatson.dir/src/main.cpp.o"
 )

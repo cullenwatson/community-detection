@@ -1,5 +1,32 @@
-C:\WINDOWS\system32\wsl.exe --distribution Ubuntu-20.04 --exec /bin/sh -c "export CLION_IDE=TRUE && export JETBRAINS_IDE=TRUE && cd /mnt/c/Users/pc/Documents/GitHub/22s-pa03-girvan-newman-cullenwatson/cmake-build-debug && /usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G 'CodeBlocks - Unix Makefiles' /mnt/c/Users/pc/Documents/GitHub/22s-pa03-girvan-newman-cullenwatson"
--- Boost version: 1.71.0
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - Unix Makefiles" /Users/pc/Documents/GitHub/22s-pa03-girvan-newman-cullenwatson
+CMake Warning at /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.20/Modules/FindBoost.cmake:1354 (message):
+  New Boost version may have incorrect or missing dependencies and imported
+  targets
+Call Stack (most recent call first):
+  /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.20/Modules/FindBoost.cmake:1476 (_Boost_COMPONENT_DEPENDENCIES)
+  /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.20/Modules/FindBoost.cmake:2086 (_Boost_MISSING_DEPENDENCIES)
+  CMakeLists.txt:15 (find_package)
+
+
+CMake Warning at /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.20/Modules/FindBoost.cmake:1354 (message):
+  New Boost version may have incorrect or missing dependencies and imported
+  targets
+Call Stack (most recent call first):
+  /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.20/Modules/FindBoost.cmake:1476 (_Boost_COMPONENT_DEPENDENCIES)
+  /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.20/Modules/FindBoost.cmake:2086 (_Boost_MISSING_DEPENDENCIES)
+  CMakeLists.txt:15 (find_package)
+
+
+CMake Warning at /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.20/Modules/FindBoost.cmake:1354 (message):
+  New Boost version may have incorrect or missing dependencies and imported
+  targets
+Call Stack (most recent call first):
+  /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.20/Modules/FindBoost.cmake:1476 (_Boost_COMPONENT_DEPENDENCIES)
+  /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.20/Modules/FindBoost.cmake:2086 (_Boost_MISSING_DEPENDENCIES)
+  CMakeLists.txt:15 (find_package)
+
+
+-- Boost version: 107600
 -- Configuring done
 -- Generating done
--- Build files have been written to: /mnt/c/Users/pc/Documents/GitHub/22s-pa03-girvan-newman-cullenwatson/cmake-build-debug
+-- Build files have been written to: /Users/pc/Documents/GitHub/22s-pa03-girvan-newman-cullenwatson/cmake-build-debug
