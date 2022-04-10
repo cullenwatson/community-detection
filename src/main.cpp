@@ -1,14 +1,18 @@
-#include "MyGraph.h"
 #include <iostream>
+#include "MyGraph.h"
 #include "Algo.h"
+
 using namespace std;
-int main(int argc, char *argv[]){
+
+int main(int argc, char *argv[]) {
 
     MyGraph myGraph("../data/people.graphml");
-    myGraph.outputEdges();
+//    myGraph.outputEdges();
 
+    myGraph.saveEdges();
     Algo algo;
-    algo.outputBetweenness();
+    algo.calcBetweenness();
+    algo.outputRanking();
 
 
 

@@ -35,18 +35,17 @@ Graph_type Algo::readGraph(std::string const& fname, Mappings& mappings){
     return Graph_type(edge_array.data(), edge_array.data() + edge_array.size(),
                  transmission_delay.data(), numVertices);
 }
-void Algo::outputBetweenness(){
-    Mappings mappings;
-    Graph_type g = readGraph("../data/people.txt", mappings);
+void Algo::calcBetweenness(){
 
-    using ECMap = std::map<Graph_type::edge_descriptor, double>;
-    using ECEntry = ECMap::value_type;
+    g = readGraph("../data/people.txt", mappings);
+
     ECMap ecm;
     brandes_betweenness_centrality(
             g, boost::edge_centrality_map(boost::make_assoc_property_map(ecm)));
 
-    std::vector<std::reference_wrapper<ECEntry>> ranking(ecm.begin(), ecm.end());
-
+    //std::vector<std::reference_wrapper<ECEntry>> ranking(ecm.begin(), ecm.end());
+    auto it = ranking.begin();
+    ranking.insert(it, ecm.begin(), ecm.end());
     {
         // top-n
         auto n = std::min(30ul, ranking.size());
@@ -57,9 +56,11 @@ void Algo::outputBetweenness(){
                 [](ECEntry const& a, ECEntry const& b) { return a.second > b.second; });
 
         ranking.erase(middle, last);
-
     }
 
+}
+
+void Algo::outputRanking() {
     auto& edgenames = mappings.right;
 
 

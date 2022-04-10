@@ -32,6 +32,7 @@ public:
     MyGraph(string);
 
     void outputEdges();
+    void saveEdges();
 };
 
 
