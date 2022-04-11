@@ -16,9 +16,8 @@ This process was repeated until enough edges had been removed removed to detect 
 **Data Sets Test**<br>
 I tested the algorithm on a computer-generated dataset [2] and the Football Conference 2000 Dataset [2]. In the project repo, you can see both of these datasets in the data folder, named people.graphml and football.graphml respectively.
 
-**COMPUTER-GENERATED DATA**
--original (with and without color)
-<p align="center"><img src="https://user-images.githubusercontent.com/78247585/162675880-7f046b8d-3fe2-4d7c-9e71-c3174826aff0.png" style="align-conter:center"></p>
+<p align="center">**COMPUTER-GENERATED DATA**
+-original (with and without color)<img src="https://user-images.githubusercontent.com/78247585/162675880-7f046b8d-3fe2-4d7c-9e71-c3174826aff0.png" style="align-conter:center"></p>
 <p align="center"><img src="https://user-images.githubusercontent.com/78247585/162675896-2c46ff51-d16a-4055-af73-25a0992da4bb.png"></p>
 <br>
 <b>RESULTS</b><br>
