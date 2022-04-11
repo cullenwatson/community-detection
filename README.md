@@ -20,14 +20,14 @@ I tested the algorithm on a computer-generated dataset [2] and the Football Conf
 -original (with and without color)
 ![image](https://user-images.githubusercontent.com/78247585/162675880-7f046b8d-3fe2-4d7c-9e71-c3174826aff0.png)
 ![image](https://user-images.githubusercontent.com/78247585/162675896-2c46ff51-d16a-4055-af73-25a0992da4bb.png)
--results: here you can now see the 4 friend groups, without the need for colored nodes
+<br>-results: here you can now see the 4 friend groups, without the need for colored nodes
 ![image](https://user-images.githubusercontent.com/78247585/162674915-39fe611d-8240-45c2-9827-e1374e1fd79a.png)
 
 **FOOTBALL DATASET**
 -original (with and without color)
 ![image](https://user-images.githubusercontent.com/78247585/162675032-2404d497-fa3f-41b5-b472-75588310f7e6.png)
 ![image](https://user-images.githubusercontent.com/78247585/162675041-adf50fc7-fe2d-4555-85a1-3bf440f38e69.png)
--results: here you can now see the 11 conferences, without the need for colored nodes
+<br>-results: here you can now see the 11 conferences, without the need for colored nodes
 ![image](https://user-images.githubusercontent.com/78247585/162675061-d923530c-3656-40c8-abea-fc9c31db0900.png)
 
 **How to Run the Project**
