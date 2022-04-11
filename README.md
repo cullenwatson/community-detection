@@ -19,16 +19,16 @@ I tested the algorithm on a computer-generated dataset [2] and the Football Conf
 **COMPUTER-GENERATED DATA**
 -original (with and without color)
 <p align="center"><img src="https://user-images.githubusercontent.com/78247585/162675880-7f046b8d-3fe2-4d7c-9e71-c3174826aff0.png" style="align-conter:center"></p>
-![image](https://user-images.githubusercontent.com/78247585/162675896-2c46ff51-d16a-4055-af73-25a0992da4bb.png)
+<p align="center"><img src="https://user-images.githubusercontent.com/78247585/162675896-2c46ff51-d16a-4055-af73-25a0992da4bb.png"></p>
 <br>**RESULTS**: here you can now see the 4 friend groups, without the need for colored nodes
-![image](https://user-images.githubusercontent.com/78247585/162676488-af9fd6e7-5414-4a71-8743-5b9f8510c357.png)
+<p align="center"><img src="https://user-images.githubusercontent.com/78247585/162676488-af9fd6e7-5414-4a71-8743-5b9f8510c357.png"></p>
 
 **FOOTBALL DATASET**
 -original (with and without color)<br>
-![image](https://user-images.githubusercontent.com/78247585/162676215-3e5332f3-be47-4284-b56e-7544ac5a8361.png)
-![image](https://user-images.githubusercontent.com/78247585/162676180-e5909d73-0cc2-46e1-aff8-923869df3bc1.png)
+<p align="center"><img src="https://user-images.githubusercontent.com/78247585/162676215-3e5332f3-be47-4284-b56e-7544ac5a8361.png"></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/78247585/162676180-e5909d73-0cc2-46e1-aff8-923869df3bc1.png"></p>
 <br>**RESULTS**: here you can now see the 11 conferences, without the need for colored nodes
-![image](https://user-images.githubusercontent.com/78247585/162676193-0a71250a-6171-4804-82b8-3ea38bcfb6a9.png)
+<p align="center"><img src="https://user-images.githubusercontent.com/78247585/162676193-0a71250a-6171-4804-82b8-3ea38bcfb6a9.png"></p>
 
 **How to Run the Project**<br>
 After cloning the repo and installing boost libraries, create the CMake project with the provided CMakeLists.txt. 
