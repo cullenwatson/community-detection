@@ -28,7 +28,7 @@ Original (with and without color)<br><img src="https://user-images.githubusercon
 <br>
 
 <p align="center"><b>RESULTS</b><br>
-Here you can now see the 4 friend groups, without the need for colored nodes<img src="https://user-images.githubusercontent.com/78247585/162676488-af9fd6e7-5414-4a71-8743-5b9f8510c357.png"></p>
+In this case, you can now see the 4 friend groups, without the need for colored nodes<img src="https://user-images.githubusercontent.com/78247585/162676488-af9fd6e7-5414-4a71-8743-5b9f8510c357.png"></p>
 
 
 <br>
@@ -42,6 +42,6 @@ Original (with and without color)
 
 <p align="center"><b>RESULTS</b>
 <br>
-Here you can now see the 11 conferences, without the need for colored nodes<img src="https://user-images.githubusercontent.com/78247585/162676193-0a71250a-6171-4804-82b8-3ea38bcfb6a9.png"></p>
+In this case, you can now see the 11 conferences, without the need for colored nodes<img src="https://user-images.githubusercontent.com/78247585/162676193-0a71250a-6171-4804-82b8-3ea38bcfb6a9.png"></p>
 
 
