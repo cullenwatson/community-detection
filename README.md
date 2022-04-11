@@ -9,7 +9,7 @@ This new GraphML file if read by a GraphML reader, such as NetworkX, would then 
 <h3>How to Run the Project</h3>
 After cloning the repo and installing boost libraries, create the CMake project with the provided CMakeLists.txt. 
 <br><br>
-The program takes one program argument, which is the path of the input .graphml file. <br>It will then output the
+The program takes one program argument, which is the path of the input .graphml file. By default, use "../data/football.graphml" <br>It will then output the
 corresponding processed .graphml file in the results folder as results.graphml
 
 <h3>Algorithm Overview</h3>
