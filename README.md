@@ -20,7 +20,7 @@ I stored all the paths into a Edge Centrality Map. The key in this map is a uniq
 This process was repeated until enough edges had been removed removed to detect the communities. In my case, I chose to stop the algorithm after all edges had a centrality of 2. This left me with about 500 edges remaining with an initial of about 1250 edges in the datases. This gave me a good view of the communities without removing too many edges.<br>
 
 <h3>Data Sets Test</h3>
-I tested the algorithm on a computer-generated dataset [2] and the Football Conference 2000 Dataset [2]. In the project repo, you can see both of these datasets in the data folder, named people.graphml and football.graphml respectively.<br><br>
+I tested the algorithm on a computer-generated dataset [2] and the Football Conference 2000 Dataset [2]. In the project repo, you can see both of these datasets in the data folder, named people.graphml and football.graphml respectively.<br>In the pictures below are the results of running these datasets through my program. The communities are now visible, and it is easier to see which nodes are related. <br><br>
 
 <p align="center"><b>COMPUTER-GENERATED DATA</b>
 -original (with and without color)<img src="https://user-images.githubusercontent.com/78247585/162675880-7f046b8d-3fe2-4d7c-9e71-c3174826aff0.png" style="align-conter:center"></p>
@@ -43,4 +43,7 @@ Original (with and without color)
 <p align="center"><b>RESULTS</b>
 <br>
 Here you can now see the 11 conferences, without the need for colored nodes<img src="https://user-images.githubusercontent.com/78247585/162676193-0a71250a-6171-4804-82b8-3ea38bcfb6a9.png"></p>
+
+<h3>Final Thoughts</h3>
+The project's real challenge was getting used to the boost graph library. There are lots of templates and just overall a lot of complexity that you have to wrap your head around. In my opinion, the easier part of this project was implemnting the algorithm once you understood how to use BGL. 
 
