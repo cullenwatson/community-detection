@@ -65,7 +65,74 @@ void Algo::calcBetweenness() {
     }
 
 }
+void Algo::getTopEdge2() {
+    using G = boost::adjacency_list<boost::setS, boost::vecS, boost::bidirectionalS,
+            boost::no_property,
+            boost::property<boost::edge_weight_t, float>>;
+    using V = G::vertex_descriptor;
 
+    set<MyEdge> myEdges;
+
+    for(int i=0; i<num_vertices(g); i++){
+        auto s = vertex(i, g);
+        assert(s == i);
+
+        std::vector<size_t> distances(num_vertices(g));
+        std::vector<V>      predecessors(num_vertices(g));
+
+        dijkstra_shortest_paths(g, s,
+                                boost::distance_map(distances.data())
+                                        .predecessor_map(predecessors.data()));
+
+        for (auto v : boost::make_iterator_range(vertices(g))) {
+            //std::cout << "distance ("<<i<<" to " << v << "): ";
+
+            for (V curr = v, pred = curr; (pred = predecessors.at(curr)) != curr;
+                 curr = predecessors.at(curr)) {
+                //std::cout << " (" << pred << ", "<<curr <<")";
+
+                // add edge
+                MyEdge myEdge(curr, pred);
+
+                auto iter = myEdges.find(myEdge);
+                // if found, inc qty
+                if (iter != myEdges.end()) {
+                    (*iter).incQty();
+                } else {
+                    myEdges.insert(myEdge);
+                }
+            }
+            std::cout << "\n";
+        }
+    }
+    // iter through set and find edge with highest betweenness
+    set<MyEdge>::iterator itr;
+    MyEdge maxEdge(0,0);
+    int maxQty = 0;
+    for (itr = myEdges.begin(); itr != myEdges.end(); itr++) {
+        int edgeQty = (*itr).getQty();
+        if(edgeQty > maxQty){
+            maxQty = edgeQty;
+
+            maxEdge.setX((*itr).getX());
+            maxEdge.setY((*itr).getY());
+        }
+    }
+    //cout<<maxEdge.getX()<< ", "<<maxEdge.getY()<<endl;
+
+    auto &edgenames = mappings.right;
+
+    // output top centrality
+
+    auto s = edgenames.at(maxEdge.getX());
+    auto t = edgenames.at(maxEdge.getY());
+    centrality_ = maxQty;
+
+    std::cout << s << "-" << t <<" CENTRALITY: "<<centrality_<< "\n";
+    topCentX = stoi(s);
+    topCentY = stoi(t);
+
+}
 void Algo::getTopEdge() {
     calcBetweenness();
 
@@ -75,7 +142,7 @@ void Algo::getTopEdge() {
 
     ECEntry const &entry = ranking[0];
     auto[edge, centrality] = entry;
-    auto s = edgenames.at(source(edge, g));
+    auto s = edgenames.at(entry.first.m_source);
     auto t = edgenames.at(target(edge, g));
     std::cout << s << "-" << t << " centrality " << centrality << "\n";
     topCentX = stoi(s);

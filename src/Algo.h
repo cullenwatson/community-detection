@@ -12,6 +12,7 @@
 #include <fstream>
 #include <iostream>
 #include "InputGraph.h"
+#include "MyEdge.h"
 using namespace boost;
 using namespace std;
 typedef bimap<string, int> Mappings;
@@ -36,7 +37,10 @@ private:
 
     // x, y of current top centrality
     int topCentX, topCentY;
+
+    // for getTopEdge()
     float centrality_;
+
     void calcBetweenness();
 public:
 
@@ -48,6 +52,7 @@ public:
 
     // outputs
     void getTopEdge();
+    void getTopEdge2();
     void outputEdges();
 
     int getTopCentX(){ return topCentX; };

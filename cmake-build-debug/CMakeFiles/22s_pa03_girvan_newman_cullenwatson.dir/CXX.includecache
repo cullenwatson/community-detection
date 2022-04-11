@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/mnt/c/Users/pc/Documents/GitHub/22s-pa03-girvan-newman-cullenwatson/src/Algo.cpp
-Algo.h
-/mnt/c/Users/pc/Documents/GitHub/22s-pa03-girvan-newman-cullenwatson/src/Algo.h
-
 /mnt/c/Users/pc/Documents/GitHub/22s-pa03-girvan-newman-cullenwatson/src/Algo.h
 boost/bimap.hpp
 -
@@ -25,6 +21,8 @@ iostream
 -
 InputGraph.h
 /mnt/c/Users/pc/Documents/GitHub/22s-pa03-girvan-newman-cullenwatson/src/InputGraph.h
+MyEdge.h
+/mnt/c/Users/pc/Documents/GitHub/22s-pa03-girvan-newman-cullenwatson/src/MyEdge.h
 
 /mnt/c/Users/pc/Documents/GitHub/22s-pa03-girvan-newman-cullenwatson/src/InputGraph.h
 iostream
@@ -57,4 +55,14 @@ boost/lexical_cast.hpp
 -
 boost/bimap.hpp
 -
+
+/mnt/c/Users/pc/Documents/GitHub/22s-pa03-girvan-newman-cullenwatson/src/MyEdge.h
+
+/mnt/c/Users/pc/Documents/GitHub/22s-pa03-girvan-newman-cullenwatson/src/main.cpp
+iostream
+-
+InputGraph.h
+/mnt/c/Users/pc/Documents/GitHub/22s-pa03-girvan-newman-cullenwatson/src/InputGraph.h
+Algo.h
+/mnt/c/Users/pc/Documents/GitHub/22s-pa03-girvan-newman-cullenwatson/src/Algo.h
 
