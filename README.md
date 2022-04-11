@@ -1,19 +1,25 @@
 <h2>Community Detection in Networks</h2>
 
-**Project Overview**<br>
+<h3>Project Overview**</h3>
 The goal of this project was to implement the Girvan-Newman algorithm to detect communities in a network. Overall, given a GraphML file, my project processes the file and applies the Girvan-Newman algorithm. Consequently, it then outputs the processed GraphML file after applying the algorithm. 
 <br>
 
 This new GraphML file if read by a GraphML reader, such as NetworkX, would then reveal to you the communities in the graph. Note: I have provided the python script I used to plot the GraphML files. 
 
-**Algorithm Overview**<br>
+<h3>How to Run the Project</h3><br>
+After cloning the repo and installing boost libraries, create the CMake project with the provided CMakeLists.txt. 
+<br>
+The program takes one program argument, which is the path of the input .graphml file. <br>It will then output the
+corresponding processed .graphml file in the results folder as results.graphml
+
+<h3>Algorithm Overview***</h3>
 In a broad overview, the Girvan-Newman algoritm calculates the edge betweeness for all edges in the graph and then removes the edge with the highest betweenness. To calculate the edge betweenness, I used the Dijkstra's algorithm, as part of the Boost library, to compute the shortest path from one chosen vertex to all other vertices in the graph.
 <br><br>
 I stored all the paths into a Edge Centrality Map. The key in this map is a unique edge, and the value is the resulting frequency  in which they appeared in Dijkstra's algorithm. After doing this for one vertex, I then applied Dijkstra's algorithm for all the vertices in the graph. This gave me the resulting Edge Centrality Map. Finally, I traversed the map to find the edge with the highest centrality. I then removed the corresponding edge from the graph.
 <br><br>
 This process was repeated until enough edges had been removed removed to detect the communities. In my case, I chose to stop the algorithm after all edges had a centrality of 2. This left me with about 500 edges remaining with an initial of about 1250 edges in the datases. This gave me a good view of the communities without removing too many edges.<br>
 
-**Data Sets Test**<br>
+<h3>Data Sets Test</h3>
 I tested the algorithm on a computer-generated dataset [2] and the Football Conference 2000 Dataset [2]. In the project repo, you can see both of these datasets in the data folder, named people.graphml and football.graphml respectively.
 
 <p align="center"><b>COMPUTER-GENERATED DATA</b>
@@ -38,8 +44,3 @@ Original (with and without color)
 <br>
 Here you can now see the 11 conferences, without the need for colored nodes<img src="https://user-images.githubusercontent.com/78247585/162676193-0a71250a-6171-4804-82b8-3ea38bcfb6a9.png"></p>
 
-**How to Run the Project**<br>
-After cloning the repo and installing boost libraries, create the CMake project with the provided CMakeLists.txt. 
-<br>
-The program takes one program argument, which is the path of the input .graphml file. <br>It will then output the
-corresponding processed .graphml file in the results folder as results.graphml
