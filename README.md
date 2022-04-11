@@ -1,1 +1,39 @@
-Community Detection Project 3
+**Community Detection in Networks**
+**
+Project Overview
+**
+
+The goal of this project was to implement the Girvan-Newman algorithm to detect communities in a network. Overall, given a GraphML file, my project processes the file and applies the Girvan-Newman algorithm. Consequently, it then outputs the processed GraphML file after applying the algorithm. 
+<br>
+
+This new GraphML file if read by a GraphML reader, such as NetworkX, would then reveal to you the communities in the graph. Note: I have provided the python script I used to plot the GraphML files. 
+
+**Algorithm Overview**
+In a broad overview, the Girvan-Newman algoritm calculates the edge betweeness for all edges in the graph and then removes the edge with the highest betweenness. To calculate the edge betweenness, I used the Dijkstra's algorithm, as part of the Boost library, to compute the shortest path from one chosen vertex to all other vertices in the graph.
+<br>
+I stored all the paths into a Edge Centrality Map. The key in this map is a unique edge, and the value is the resulting frequency  in which they appeared in Dijkstra's algorithm. After doing this for one vertex, I then applied Dijkstra's algorithm for all the vertices in the graph. This gave me the resulting Edge Centrality Map. Finally, I traversed the map to find the edge with the highest centrality. I then removed the corresponding edge from the graph.
+<br>
+This process was repeated until enough edges had been removed removed to detect the communities. In my case, I chose to stop the algorithm after all edges had a centrality of 2. This left me with about 500 edges remaining with an initial of about 1250 edges in the datases. This gave me a good view of the communities without removing too many edges.<br>
+
+**Data Sets Test**
+I tested the algorithm on a computer-generated dataset [2] and the Football Conference 2000 Dataset [2]. In the project repo, you can see both of these datasets in the data folder, named people.graphml and football.graphml respectively.
+
+COMPUTER-GENERATED DATA
+-original (with and without color)
+![image](https://user-images.githubusercontent.com/78247585/162674896-563268ce-ba28-4367-a72d-a5e45bc7d7ab.png)
+![image](https://user-images.githubusercontent.com/78247585/162674974-234a337f-5049-442b-b3ee-b817f3905af5.png)
+-results: here you can now see the 4 friend groups, without the need for colored nodes
+![image](https://user-images.githubusercontent.com/78247585/162674915-39fe611d-8240-45c2-9827-e1374e1fd79a.png)
+
+FOOTBALL DATASET
+-original (with and without color)
+![image](https://user-images.githubusercontent.com/78247585/162675032-2404d497-fa3f-41b5-b472-75588310f7e6.png)
+![image](https://user-images.githubusercontent.com/78247585/162675041-adf50fc7-fe2d-4555-85a1-3bf440f38e69.png)
+-results: here you can now see the 11 conferences, without the need for colored nodes
+![image](https://user-images.githubusercontent.com/78247585/162675061-d923530c-3656-40c8-abea-fc9c31db0900.png)
+
+**How to Run the Project**
+After cloning the repo and installing boost libraries, create the CMake project with the provided CMakeLists.txt. 
+<br>
+The program takes one program argument, which is the path of the input .graphml file. <br>The prograpm will then output the
+corresponding processed .graphml file in the results folder as results.graphml
