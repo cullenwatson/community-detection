@@ -18,7 +18,7 @@ I tested the algorithm on a computer-generated dataset [2] and the Football Conf
 
 **COMPUTER-GENERATED DATA**
 -original (with and without color)
-![image](https://user-images.githubusercontent.com/78247585/162675880-7f046b8d-3fe2-4d7c-9e71-c3174826aff0.png)
+<img src="https://user-images.githubusercontent.com/78247585/162675880-7f046b8d-3fe2-4d7c-9e71-c3174826aff0.png" style="align-conter:center">
 ![image](https://user-images.githubusercontent.com/78247585/162675896-2c46ff51-d16a-4055-af73-25a0992da4bb.png)
 <br>**RESULTS**: here you can now see the 4 friend groups, without the need for colored nodes
 ![image](https://user-images.githubusercontent.com/78247585/162676488-af9fd6e7-5414-4a71-8743-5b9f8510c357.png)
