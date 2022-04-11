@@ -1,6 +1,6 @@
 <h2>Community Detection in Networks</h2>
 
-<h3>Project Overview**</h3>
+<h3>Project Overview</h3>
 The goal of this project was to implement the Girvan-Newman algorithm to detect communities in a network. Overall, given a GraphML file, my project processes the file and applies the Girvan-Newman algorithm. Consequently, it then outputs the processed GraphML file after applying the algorithm. 
 <br>
 
@@ -12,7 +12,7 @@ After cloning the repo and installing boost libraries, create the CMake project 
 The program takes one program argument, which is the path of the input .graphml file. <br>It will then output the
 corresponding processed .graphml file in the results folder as results.graphml
 
-<h3>Algorithm Overview***</h3>
+<h3>Algorithm Overview</h3>
 In a broad overview, the Girvan-Newman algoritm calculates the edge betweeness for all edges in the graph and then removes the edge with the highest betweenness. To calculate the edge betweenness, I used the Dijkstra's algorithm, as part of the Boost library, to compute the shortest path from one chosen vertex to all other vertices in the graph.
 <br><br>
 I stored all the paths into a Edge Centrality Map. The key in this map is a unique edge, and the value is the resulting frequency  in which they appeared in Dijkstra's algorithm. After doing this for one vertex, I then applied Dijkstra's algorithm for all the vertices in the graph. This gave me the resulting Edge Centrality Map. Finally, I traversed the map to find the edge with the highest centrality. I then removed the corresponding edge from the graph.
