@@ -7,15 +7,18 @@ using namespace std;
 int main(int argc, char *argv[]) {
 
     // create graph
-    InputGraph inputGraph("../data/people.graphml");
+    InputGraph inputGraph(argv[1]);
 
     Algo algo;
 
     // ------REMOVE TOP N  EDGES
 
     float centrality = 400;
-    // 2.34 (500)
-    while (centrality > 5) {
+
+    // Girvan & NewMan Algo
+    // getTopEdge(): 2 centrality (545 edges remaining)
+    // getTopEdge(): 2 centrality (517 edges remaining)
+    while (centrality > 2) {
         // 1. Save current graph
         inputGraph.saveEdges();
 
