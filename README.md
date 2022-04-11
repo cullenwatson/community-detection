@@ -24,7 +24,7 @@ I tested the algorithm on a computer-generated dataset [2] and the Football Conf
 ![image](https://user-images.githubusercontent.com/78247585/162676488-af9fd6e7-5414-4a71-8743-5b9f8510c357.png)
 
 **FOOTBALL DATASET**
--original (with and without color)
+-original (with and without color)<br>
 ![image](https://user-images.githubusercontent.com/78247585/162676215-3e5332f3-be47-4284-b56e-7544ac5a8361.png)
 ![image](https://user-images.githubusercontent.com/78247585/162676180-e5909d73-0cc2-46e1-aff8-923869df3bc1.png)
 <br>**RESULTS**: here you can now see the 11 conferences, without the need for colored nodes
