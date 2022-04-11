@@ -25,12 +25,12 @@ I tested the algorithm on a computer-generated dataset [2] and the Football Conf
 
 **FOOTBALL DATASET**
 -original (with and without color)
-![image](https://user-images.githubusercontent.com/78247585/162675032-2404d497-fa3f-41b5-b472-75588310f7e6.png)
-![image](https://user-images.githubusercontent.com/78247585/162675041-adf50fc7-fe2d-4555-85a1-3bf440f38e69.png)
+![image](https://user-images.githubusercontent.com/78247585/162676215-3e5332f3-be47-4284-b56e-7544ac5a8361.png)
+![image](https://user-images.githubusercontent.com/78247585/162676180-e5909d73-0cc2-46e1-aff8-923869df3bc1.png)
 <br>-results: here you can now see the 11 conferences, without the need for colored nodes
-![image](https://user-images.githubusercontent.com/78247585/162675061-d923530c-3656-40c8-abea-fc9c31db0900.png)
+![image](https://user-images.githubusercontent.com/78247585/162676193-0a71250a-6171-4804-82b8-3ea38bcfb6a9.png)
 
-**How to Run the Project**
+**How to Run the Project**<br>
 After cloning the repo and installing boost libraries, create the CMake project with the provided CMakeLists.txt. 
 <br>
 The program takes one program argument, which is the path of the input .graphml file. <br>The prograpm will then output the
