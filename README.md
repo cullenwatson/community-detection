@@ -44,6 +44,4 @@ Original (with and without color)
 <br>
 Here you can now see the 11 conferences, without the need for colored nodes<img src="https://user-images.githubusercontent.com/78247585/162676193-0a71250a-6171-4804-82b8-3ea38bcfb6a9.png"></p>
 
-<h3>Final Thoughts</h3>
-The project's real challenge was getting used to the boost graph library. There are lots of templates and just overall a lot of complexity that you have to wrap your head around. In my opinion, the easier part of this project was implemnting the algorithm once you understood how to use BGL. 
 
