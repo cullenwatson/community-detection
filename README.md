@@ -2,13 +2,13 @@
 
 <h3>Project Overview</h3>
 The goal of this project was to implement the Girvan-Newman algorithm to detect communities in a network. Overall, given a GraphML file, my project processes the file and applies the Girvan-Newman algorithm. Consequently, it then outputs the processed GraphML file after applying the algorithm. 
-<br>
+<br><br>
 
 This new GraphML file if read by a GraphML reader, such as NetworkX, would then reveal to you the communities in the graph. Note: I have provided the python script I used to plot the GraphML files. 
 
-<h3>How to Run the Project</h3><br>
+<h3>How to Run the Project</h3>
 After cloning the repo and installing boost libraries, create the CMake project with the provided CMakeLists.txt. 
-<br>
+<br><br>
 The program takes one program argument, which is the path of the input .graphml file. <br>It will then output the
 corresponding processed .graphml file in the results folder as results.graphml
 
@@ -20,7 +20,7 @@ I stored all the paths into a Edge Centrality Map. The key in this map is a uniq
 This process was repeated until enough edges had been removed removed to detect the communities. In my case, I chose to stop the algorithm after all edges had a centrality of 2. This left me with about 500 edges remaining with an initial of about 1250 edges in the datases. This gave me a good view of the communities without removing too many edges.<br>
 
 <h3>Data Sets Test</h3>
-I tested the algorithm on a computer-generated dataset [2] and the Football Conference 2000 Dataset [2]. In the project repo, you can see both of these datasets in the data folder, named people.graphml and football.graphml respectively.<br>In the pictures below are the results of running these datasets through my program. The communities are now visible, and it is easier to see which nodes are related. <br><br>
+I tested the algorithm on a computer-generated dataset [2] and the Football Conference 2000 Dataset [2]. In the project repo, you can see both of these datasets in the data folder, named people.graphml and football.graphml respectively.<br><br>In the pictures below are the results of running these datasets through my program. The communities are now visible, and it is easier to see which nodes are related. <br><br>
 
 <p align="center"><b>COMPUTER-GENERATED DATA</b><br>
 Original (with and without color)<br><img src="https://user-images.githubusercontent.com/78247585/162675880-7f046b8d-3fe2-4d7c-9e71-c3174826aff0.png" style="align-conter:center"></p>
