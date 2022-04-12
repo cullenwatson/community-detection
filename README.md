@@ -10,7 +10,7 @@ This new GraphML file if read by a GraphML reader, such as NetworkX, would then 
 After cloning the repo and installing boost libraries, create the CMake project with the provided CMakeLists.txt. 
 <br><br>
 The program takes one program argument, which is the path of the input .graphml file. By default, use "../data/football.graphml" <br>It will then output the
-corresponding processed .graphml file in the results folder as results.graphml
+corresponding processed .graphml file in the data folder as results.graphml
 
 <h3>Algorithm Overview</h3>
 In a broad overview, the Girvan-Newman algoritm calculates the edge betweenness for all edges in the graph and then removes the edge with the highest betweenness. To calculate the edge betweenness, I used the Dijkstra's algorithm, as part of the Boost library, to compute the shortest path from one chosen vertex to all other vertices in the graph.
