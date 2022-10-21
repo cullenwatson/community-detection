@@ -1,7 +1,7 @@
 ## Community Detection in Networks
 
 ### Project Overview
-The goal of this project was to implement the Girvan-Newman algorithm to detect communities in a network. Overall, given a GraphML file, my project processes the file and applies the Girvan-Newman algorithm. Consequently, it then outputs the processed GraphML file.
+The goal of this project was to implement the Girvan-Newman algorithm to detect communities in a network. Overall, given a GraphML file, the program processes the file and applies the Girvan-Newman algorithm. Consequently, it then outputs the processed GraphML file.
 <br><br>
 
 This new GraphML file if read by a GraphML reader, such as NetworkX, would then reveal to you the communities in the graph. Note: I have provided the python script I used to plot the GraphML files. 
