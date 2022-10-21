@@ -1,5 +1,7 @@
 ## Community Detection in Networks
 
+[Medium Article - Comparing Two Popular Community Detection Algos](https://medium.com/smucs/girvan-newman-and-louvain-algorithms-for-community-detection-f3feb7c31908) <br>
+
 ### Project Overview
 The goal of this project was to implement the Girvan-Newman algorithm to detect communities in a network. Overall, given a GraphML file, the program processes the file and applies the Girvan-Newman algorithm. Consequently, it then outputs the processed GraphML file.
 <br><br>
