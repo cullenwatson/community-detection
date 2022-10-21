@@ -1,15 +1,15 @@
-<h2>Community Detection in Networks</h2>
+## Community Detection in Networks
 
-<h3>Project Overview</h3>
+### Project Overview
 The goal of this project was to implement the Girvan-Newman algorithm to detect communities in a network. Overall, given a GraphML file, my project processes the file and applies the Girvan-Newman algorithm. Consequently, it then outputs the processed GraphML file.
 <br><br>
 
 This new GraphML file if read by a GraphML reader, such as NetworkX, would then reveal to you the communities in the graph. Note: I have provided the python script I used to plot the GraphML files. 
 
-<h3>How to Run the Project</h3>
+### How to Run the Project
 After cloning the repo and installing boost libraries, create the CMake project with the provided CMakeLists.txt. 
 <br><br>
-The program takes one program argument, which is the path of the input .graphml file. By default, use "../data/football.graphml" <br>It will then output the
+The program takes one program argument, which is the path of the input .graphml file. By default, use ``` ../data/football.graphml``` <br> It will then output the
 corresponding processed .graphml file in the data folder as results.graphml
 
 <h3>Algorithm Overview</h3>
